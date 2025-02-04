@@ -1,0 +1,60 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url('https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+/* .nav-links > ul > li {
+    font-size: 2rem;
+    transition: transform 0.3s;
+
+}
+
+.nav-links > ul > li:hover {
+    transform: scale(1.05);
+} */
+
+@media (max-width: 1280px) {
+    .product-container {
+        grid-template-columns: repeat(
+            3,
+            1fr
+        ); /* 3 items per row on smaller screens */
+    }
+}
+
+
+@media (max-width: 768px) {
+    .product-container {
+        grid-template-columns: repeat(
+            2,
+            1fr
+        ); /* 2 items per row on smaller screens */
+    }
+}
+
+@media (max-width: 480px) {
+    .product-container {
+        grid-template-columns: 1fr; /* 1 item per row on very small screens */
+    }
+}
+
+
+.product-name {
+    top: 1%;
+    left: 1%;
+}
+
+.product-price {
+    bottom: 1%;
+    left: 1%;
+}
+
+.cart-icon {
+    bottom: 1%;
+    right: 1%;
+}

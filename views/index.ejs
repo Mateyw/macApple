@@ -4,8 +4,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../styles/home.css">
-    <link rel="stylesheet" href="../styles/reset-css.css">
+    <!-- <link rel="stylesheet" href="home.css"> -->
+    <link rel="stylesheet" href="/reset.css">
+    <!-- <link rel="stylesheet" href="/index.css"> -->
+    <link rel="stylesheet" href="/styles/output.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
         integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
@@ -13,13 +15,14 @@
 </head>
 
 <body>
-    <header>
+    <header style="height: clamp(3rem, 10vw, 5rem);"
+        class="flex justify-between items-center pt-4 pb-4 pl-8 pr-8 bg-light-green border-b-4 border-black">
         <div>
-            <span id="title">MACaPPLE</span>
+            <span id="title" class="font-bold text-3xl">MACaPPLE</span>
         </div>
-        <div class="nav-links">
-            <ul>
-                <li class="item-1 active"><a href="#">Menus</a></li>
+        <div style="margin-left: 50%;" class="nav-links flex gap-4 border-4 border-purple-500 ">
+            <ul class="flex list-none gap-4">
+                <li class="item-1 active font-bold"><a href="#">Menus</a></li>
                 <li><a href="#">Products</a></li>
                 <li><a href="#">Contest</a></li>
                 <li><a href="#">Login</a></li>
@@ -27,49 +30,25 @@
             </ul>
         </div>
         <div>
-            <div class="cart-container">
-                <i class="fa-solid fa-cart-shopping cart-icon"></i>
-                <span class="items-in-cart">0</span>
+            <div class="cart-container flex justify-center items-center gap-2">
+                <i class="fa-solid fa-cart-shopping cart-icon text-3xl"></i>
+                <span class="items-in-cart text-2xl">0</span>
             </div>
         </div>
     </header>
 
-    <main>
-        <div class="product-container">
-            <div class="product">
-                <img src="../assets/burger.png" alt="Product Image">
-                <div class="product-info">
-                    <span class="product-name">Macbook Pro</span>
-                    <span class="product-price">$1299.99</span>
-                    <i class="fa-solid fa-cart-shopping cart-icon"></i>
-                </div>
-            </div>
-            <div class="product">
-                <img src="../assets/burger.png" alt="Product Image">
-                <div class="product-info">
-                    <span class="product-name">Macbook Pro</span>
-                    <span class="product-price">$1299.99</span>
-                    <i class="fa-solid fa-cart-shopping cart-icon"></i>
-                </div>
-            </div>
-            <div class="product">
-                <img src="../assets/burger.png" alt="Product Image">
-                <div class="product-info">
-                    <span class="product-name">Macbook Pro</span>
-                    <span class="product-price">$1299.99</span>
-                    <i class="fa-solid fa-cart-shopping cart-icon"></i>
-                </div>
-            </div>
-            <div class="product">
-                <img src="../assets/burger.png" alt="Product Image">
-                <div class="product-info">
-                    <span class="product-name">Macbook Pro</span>
-                    <span class="product-price">$1299.99</span>
-                    <i class="fa-solid fa-cart-shopping cart-icon"></i>
+    <main style="width: clamp(20rem, 70%, 100%);" class="border-4 border-black mt-50 mb-50 ml-auto mr-auto">
+        <div class="product-container grid grid-cols-4 gap-8 p-4 border-4 border-red-500 mt-0 mb-0 mr-auto ml-auto">
+            <div class="product border-4 border-blue-500 max-w-max flex justify-center items-center flex-col relative p-4 ">
+                <img class="w-full h-auto border-4 border-pink-500"  src="/assets/burger.png" alt="Product Image">
+                <div style="    min-height: clamp(3rem, 5rem, 7rem);
+" class="product-info relative w-full">
+                    <span class="product-name absolute font-bold text-xl">Macbook Pro</span>
+                    <span class="product-price absolute font-bold font-lg">$1299.99</span>
+                    <i class="fa-solid fa-cart-shopping cart-icon absolute text-xl cursor-pointer"></i>
                 </div>
             </div>
         </div>
-
     </main>
 </body>
 
