@@ -1,5 +1,6 @@
 const btnMenus = document.querySelector(".btn-menus")
 const titleEl = document.querySelector('#title');
+const 
 
 btnMenus.addEventListener("click", () => {
     btnMenus.style.fontWeight = "bold";
@@ -7,6 +8,6 @@ btnMenus.addEventListener("click", () => {
 
 
 titleEl.addEventListener("click", () => {
-    window.location.href = "/"; 
+    window.location.href = "/";
 
 })
