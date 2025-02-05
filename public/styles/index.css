@@ -8,6 +8,7 @@ body {
     font-family: 'Roboto', sans-serif;
     box-sizing: border-box;
     max-width: 100vw;
+    position: relative;
 }
 
 .nav-links > ul > li {
@@ -59,4 +60,8 @@ body {
 .cart-icon {
     bottom: 1%;
     right: 1%;
+}
+
+footer {
+
 }
