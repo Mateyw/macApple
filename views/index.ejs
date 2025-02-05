@@ -5,12 +5,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- <link rel="stylesheet" href="home.css"> -->
-    <link rel="stylesheet" href="/reset.css">
-    <!-- <link rel="stylesheet" href="/index.css"> -->
+    <link rel="stylesheet" type="text/css" href="/reset.css">
+    <!-- <link rel="stylesheet " href="/index.css"> -->
     <link rel="stylesheet" href="/styles/output.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
         integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <script src="../index.js" defer></script>
     <title>Home</title>
 </head>
 
@@ -21,12 +22,12 @@
             <span id="title" class="font-bold text-3xl">MACaPPLE</span>
         </div>
         <div style="margin-left: 50%;" class="nav-links flex gap-4 border-4 border-purple-500 ">
-            <ul class="flex list-none gap-4">
-                <li class="item-1 active font-bold"><a href="#">Menus</a></li>
-                <li><a href="#">Products</a></li>
-                <li><a href="#">Contest</a></li>
-                <li><a href="#">Login</a></li>
-                <li><a href="#">Sign Up</a></li>
+            <ul class="flex list-none gap-4 items-center justify-center">
+                <li class="btn-menus"><a href="/menus">Menus</a></li>
+                <li class="btn-products"><a href="/products">Products</a></li>
+                <li class="btn-contest"><a href="/contest">Contest</a></li>
+                <li class="btn-login"><a href="/login">Login</a></li>
+                <li class="btn-signup"><a href="/signup">Sign Up</a></li>
             </ul>
         </div>
         <div>
@@ -37,8 +38,71 @@
         </div>
     </header>
 
-    <main style="width: clamp(20rem, 70%, 100%);" class="border-4 border-black mt-50 mb-50 ml-auto mr-auto">
+    <main style="width: clamp(20rem, 70%, 100%);" class="border-4 border-black mt-24 mb-24 ml-auto mr-auto ">
         <div class="product-container grid grid-cols-4 gap-8 p-4 border-4 border-red-500 mt-0 mb-0 mr-auto ml-auto">
+            <div class="product border-4 border-blue-500 max-w-max flex justify-center items-center flex-col relative p-4 ">
+                <img class="w-full h-auto border-4 border-pink-500"  src="/assets/burger.png" alt="Product Image">
+                <div style="    min-height: clamp(3rem, 5rem, 7rem);
+" class="product-info relative w-full">
+                    <span class="product-name absolute font-bold text-xl">Macbook Pro</span>
+                    <span class="product-price absolute font-bold font-lg">$1299.99</span>
+                    <i class="fa-solid fa-cart-shopping cart-icon absolute text-xl cursor-pointer"></i>
+                </div>
+            </div>
+            <div class="product border-4 border-blue-500 max-w-max flex justify-center items-center flex-col relative p-4 ">
+                <img class="w-full h-auto border-4 border-pink-500"  src="/assets/burger.png" alt="Product Image">
+                <div style="    min-height: clamp(3rem, 5rem, 7rem);
+" class="product-info relative w-full">
+                    <span class="product-name absolute font-bold text-xl">Macbook Pro</span>
+                    <span class="product-price absolute font-bold font-lg">$1299.99</span>
+                    <i class="fa-solid fa-cart-shopping cart-icon absolute text-xl cursor-pointer"></i>
+                </div>
+            </div>
+            <div class="product border-4 border-blue-500 max-w-max flex justify-center items-center flex-col relative p-4 ">
+                <img class="w-full h-auto border-4 border-pink-500"  src="/assets/burger.png" alt="Product Image">
+                <div style="    min-height: clamp(3rem, 5rem, 7rem);
+" class="product-info relative w-full">
+                    <span class="product-name absolute font-bold text-xl">Macbook Pro</span>
+                    <span class="product-price absolute font-bold font-lg">$1299.99</span>
+                    <i class="fa-solid fa-cart-shopping cart-icon absolute text-xl cursor-pointer"></i>
+                </div>
+            </div>
+            <div class="product border-4 border-blue-500 max-w-max flex justify-center items-center flex-col relative p-4 ">
+                <img class="w-full h-auto border-4 border-pink-500"  src="/assets/burger.png" alt="Product Image">
+                <div style="    min-height: clamp(3rem, 5rem, 7rem);
+" class="product-info relative w-full">
+                    <span class="product-name absolute font-bold text-xl">Macbook Pro</span>
+                    <span class="product-price absolute font-bold font-lg">$1299.99</span>
+                    <i class="fa-solid fa-cart-shopping cart-icon absolute text-xl cursor-pointer"></i>
+                </div>
+            </div>
+            <div class="product border-4 border-blue-500 max-w-max flex justify-center items-center flex-col relative p-4 ">
+                <img class="w-full h-auto border-4 border-pink-500"  src="/assets/burger.png" alt="Product Image">
+                <div style="    min-height: clamp(3rem, 5rem, 7rem);
+" class="product-info relative w-full">
+                    <span class="product-name absolute font-bold text-xl">Macbook Pro</span>
+                    <span class="product-price absolute font-bold font-lg">$1299.99</span>
+                    <i class="fa-solid fa-cart-shopping cart-icon absolute text-xl cursor-pointer"></i>
+                </div>
+            </div>
+            <div class="product border-4 border-blue-500 max-w-max flex justify-center items-center flex-col relative p-4 ">
+                <img class="w-full h-auto border-4 border-pink-500"  src="/assets/burger.png" alt="Product Image">
+                <div style="    min-height: clamp(3rem, 5rem, 7rem);
+" class="product-info relative w-full">
+                    <span class="product-name absolute font-bold text-xl">Macbook Pro</span>
+                    <span class="product-price absolute font-bold font-lg">$1299.99</span>
+                    <i class="fa-solid fa-cart-shopping cart-icon absolute text-xl cursor-pointer"></i>
+                </div>
+            </div>
+            <div class="product border-4 border-blue-500 max-w-max flex justify-center items-center flex-col relative p-4 ">
+                <img class="w-full h-auto border-4 border-pink-500"  src="/assets/burger.png" alt="Product Image">
+                <div style="    min-height: clamp(3rem, 5rem, 7rem);
+" class="product-info relative w-full">
+                    <span class="product-name absolute font-bold text-xl">Macbook Pro</span>
+                    <span class="product-price absolute font-bold font-lg">$1299.99</span>
+                    <i class="fa-solid fa-cart-shopping cart-icon absolute text-xl cursor-pointer"></i>
+                </div>
+            </div>
             <div class="product border-4 border-blue-500 max-w-max flex justify-center items-center flex-col relative p-4 ">
                 <img class="w-full h-auto border-4 border-pink-500"  src="/assets/burger.png" alt="Product Image">
                 <div style="    min-height: clamp(3rem, 5rem, 7rem);
@@ -50,6 +114,13 @@
             </div>
         </div>
     </main>
+    <footer class="bg-gray-800 text-white text-center p-4">
+        <p>&copy; 2025 MACaPPLE. All rights reserved. </p>
+        <a href="https://github.com/ioana229/MMI" target="_blank" class="text-blue-400 hover:underline">
+            GitHub
+        </a>
+    </footer>
+
 </body>
 
 </html>
